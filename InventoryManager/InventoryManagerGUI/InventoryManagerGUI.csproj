@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InventoryManager\InventoryManagerData.csproj" />
+  </ItemGroup>
+
 </Project>

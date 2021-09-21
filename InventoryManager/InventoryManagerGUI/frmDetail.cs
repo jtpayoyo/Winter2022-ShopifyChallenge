@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InventoryManagerData;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,26 @@ namespace InventoryManagerGUI
         {
             InitializeComponent();
         }
-        
+
+        // Initialize properties
+        public int itemId;          // Selected itemId
+        private Item myItem;        // Item from itemId
+
+        // Completes on form load
+        private void frmDetail_Load(object sender, EventArgs e)
+        {
+            myItem = ItemManager.GetItemById(itemId);
+            txtItemId.Text = myItem.ItemId.ToString();
+            txtItemName.Text = myItem.ItemName;
+            txtItemDescription.Text = myItem.ItemDescription;
+            txtItemQuantity.Text = myItem.ItemQuantity.ToString();
+            txtFactoryPrice.Text = myItem.FactoryPrice.ToString("f2");
+            txtFactoryDiscount.Text = myItem.FactoryDiscount.ToString("f2");
+            txtItemPrice.Text = myItem.ItemPrice.ToString("f2");
+            txtItemDiscount.Text = myItem.ItemDiscount.ToString("f2");
+            txtItemName.Focus();
+        }
+
         // Close the page without saving changes
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -33,5 +53,6 @@ namespace InventoryManagerGUI
         {
 
         }
+
     } // End of class
 } // End of namespace

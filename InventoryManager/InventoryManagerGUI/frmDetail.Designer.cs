@@ -178,7 +178,7 @@ namespace InventoryManagerGUI
             this.groupBox1.Size = new System.Drawing.Size(336, 185);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Manufacturer Pricing";
+            this.groupBox1.Text = "Factory Pricing";
             // 
             // groupBox2
             // 
@@ -279,6 +279,7 @@ namespace InventoryManagerGUI
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDetail";
             this.Text = "Item Details";
+            this.Load += new System.EventHandler(this.frmDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
