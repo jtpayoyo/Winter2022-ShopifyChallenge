@@ -29,21 +29,53 @@ namespace InventoryManagerGUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.dgvItems = new System.Windows.Forms.DataGridView();
+            this.btnExit = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dgvItems
+            // 
+            this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItems.Location = new System.Drawing.Point(66, 52);
+            this.dgvItems.Name = "dgvItems";
+            this.dgvItems.RowHeadersWidth = 51;
+            this.dgvItems.RowTemplate.Height = 29;
+            this.dgvItems.Size = new System.Drawing.Size(963, 500);
+            this.dgvItems.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(503, 590);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(94, 43);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "&Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.CancelButton = this.btnExit;
+            this.ClientSize = new System.Drawing.Size(1100, 665);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.dgvItems);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventory Manager ";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvItems;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

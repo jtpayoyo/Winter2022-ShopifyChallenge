@@ -23,5 +23,10 @@ namespace InventoryManagerGUI
             InitializeComponent();
         }
 
+        // Exit application by clicking button, ESC, or Alt + E
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     } // End of class 
 } // End of namespace
