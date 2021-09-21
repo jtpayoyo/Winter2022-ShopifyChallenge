@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManager.csproj": {}
+    "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManagerData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManager.csproj": {
+    "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManagerData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManager.csproj",
-        "projectName": "InventoryManager",
-        "projectPath": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManager.csproj",
+        "projectUniqueName": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManagerData.csproj",
+        "projectName": "InventoryManagerData",
+        "projectPath": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManagerData.csproj",
         "packagesPath": "C:\\Users\\apple\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\obj\\",
         "projectStyle": "PackageReference",
@@ -39,6 +39,26 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

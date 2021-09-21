@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManager.csproj": {}
+    "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManagerGUI\\InventoryManagerGUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManager.csproj": {
+    "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManagerGUI\\InventoryManagerGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManager.csproj",
-        "projectName": "InventoryManager",
-        "projectPath": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\InventoryManager.csproj",
+        "projectUniqueName": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManagerGUI\\InventoryManagerGUI.csproj",
+        "projectName": "InventoryManagerGUI",
+        "projectPath": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManagerGUI\\InventoryManagerGUI.csproj",
         "packagesPath": "C:\\Users\\apple\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManager\\obj\\",
+        "outputPath": "C:\\Users\\apple\\Documents\\GitHub\\Winter2022-ShopifyChallenge\\InventoryManager\\InventoryManagerGUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\apple\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,6 +52,9 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
