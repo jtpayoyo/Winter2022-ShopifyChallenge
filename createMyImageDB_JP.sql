@@ -24,6 +24,7 @@ CREATE TABLE [dbo].[Items](
 	ItemId int IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	ItemName varchar(50) NOT NULL,
 	ItemDescription varchar(100) NOT NULL,
+	ItemQuantity int NOT NULL,
 	FactoryPrice money NOT NULL,
 	FactoryDiscount money NOT NULL,
 	ItemPrice money NOT NULL,
@@ -62,11 +63,11 @@ SELECT 'ChickWithWatermelon','png',ImageFile
 FROM OPENROWSET(BULK N'C:\ChicksWithHats\watermelon.png',SINGLE_BLOB)AS ImageSource(ImageFile);
 
 -- Add items
-INSERT Items(ItemName, ItemDescription, FactoryPrice, FactoryDiscount, ItemPrice, ItemDiscount, ImageId) 
-	values(N'Chick with Sunhat',N'A little chick wearing a sunhat in the breeze', 8.00, 0.1, 15.00, 0.2, 1);
-INSERT Items(ItemName, ItemDescription, FactoryPrice, FactoryDiscount, ItemPrice, ItemDiscount, ImageId) 
-	values(N'Chick with Crown',N'A royal chick exuding a regal presence', 12.00, 0.4, 20.00, 0.3, 2);
-INSERT Items(ItemName, ItemDescription, FactoryPrice, FactoryDiscount, ItemPrice, ItemDiscount, ImageId) 
-	values(N'Chick with Cap',N'A sporty chick ready to play ball', 9.00, 0.3, 10.00, 0.1, 3);
-INSERT Items(ItemName, ItemDescription, FactoryPrice, FactoryDiscount, ItemPrice, ItemDiscount, ImageId) 
-	values(N'Chick with Watermelon',N'A summer chick who loves to eat fruit',10.00, 0.5, 11.00 , 0.4, 4);
+INSERT Items(ItemName, ItemDescription, ItemQuantity, FactoryPrice, FactoryDiscount, ItemPrice, ItemDiscount, ImageId) 
+	values(N'Chick with Sunhat',N'A little chick wearing a sunhat in the breeze', 50, 8.00, 0.1, 15.00, 0.2, 1);
+INSERT Items(ItemName, ItemDescription, ItemQuantity, FactoryPrice, FactoryDiscount, ItemPrice, ItemDiscount, ImageId) 
+	values(N'Chick with Crown',N'A royal chick exuding a regal presence', 35, 12.00, 0.4, 20.00, 0.3, 2);
+INSERT Items(ItemName, ItemDescription, ItemQuantity, FactoryPrice, FactoryDiscount, ItemPrice, ItemDiscount, ImageId) 
+	values(N'Chick with Cap',N'A sporty chick ready to play ball', 20, 9.00, 0.3, 10.00, 0.1, 3);
+INSERT Items(ItemName, ItemDescription, ItemQuantity, FactoryPrice, FactoryDiscount, ItemPrice, ItemDiscount, ImageId) 
+	values(N'Chick with Watermelon',N'A summer chick who loves to eat fruit', 100, 10.00, 0.5, 11.00 , 0.4, 4);

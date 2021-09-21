@@ -1,0 +1,17 @@
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\bin\Debug\netcoreapp3.1\InventoryManagerGUI.exe
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\bin\Debug\netcoreapp3.1\InventoryManagerGUI.dll.config
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\bin\Debug\netcoreapp3.1\InventoryManagerGUI.deps.json
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\bin\Debug\netcoreapp3.1\InventoryManagerGUI.runtimeconfig.json
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\bin\Debug\netcoreapp3.1\InventoryManagerGUI.runtimeconfig.dev.json
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\bin\Debug\netcoreapp3.1\InventoryManagerGUI.dll
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\bin\Debug\netcoreapp3.1\InventoryManagerGUI.pdb
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.csproj.AssemblyReference.cache
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.frmDetail.resources
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.frmMain.resources
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.csproj.GenerateResource.cache
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.AssemblyInfoInputs.cache
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.AssemblyInfo.cs
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.csproj.CoreCompileInputs.cache
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.dll
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.pdb
+C:\Users\apple\Documents\GitHub\Winter2022-ShopifyChallenge\InventoryManager\InventoryManagerGUI\obj\Debug\netcoreapp3.1\InventoryManagerGUI.genruntimeconfig.cache

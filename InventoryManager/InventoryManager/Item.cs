@@ -18,6 +18,7 @@ namespace InventoryManagerData
         [Required]
         [StringLength(100)]
         public string ItemDescription { get; set; }
+        public int ItemQuantity { get; set; }
         [Column(TypeName = "money")]
         public decimal FactoryPrice { get; set; }
         [Column(TypeName = "money")]

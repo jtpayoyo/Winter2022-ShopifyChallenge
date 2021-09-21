@@ -26,7 +26,8 @@ namespace InventoryManagerData
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["MyImageDB"].ConnectionString).
-                    UseLazyLoadingProxies();
+                                    UseLazyLoadingProxies();
+
             }
         }
 
