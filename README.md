@@ -1,5 +1,5 @@
 # Winter2022-ShopifyChallenge
-A simple inventory manager application made using Windows Forms for the Winter 2022 Shopify Developer Intern Challenge Question. I programmed it in C# using the .NET Core 3.1 framework. 
+A simple inventory manager application made using Windows Forms for the Winter 2022 Shopify Developer Intern Challenge Question. I programmed it in C# using the .NET Core 3.1 framework and images were created by me. 
 
 **Quick Start**
 1. Copy the ChicksWithHats folder into the root folder of your C: drive.
