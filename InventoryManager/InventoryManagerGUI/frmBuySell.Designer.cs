@@ -81,7 +81,7 @@ namespace InventoryManagerGUI
             // 
             // nupQuantity
             // 
-            this.nupQuantity.Location = new System.Drawing.Point(186, 176);
+            this.nupQuantity.Location = new System.Drawing.Point(186, 69);
             this.nupQuantity.Name = "nupQuantity";
             this.nupQuantity.Size = new System.Drawing.Size(125, 34);
             this.nupQuantity.TabIndex = 12;
@@ -91,7 +91,7 @@ namespace InventoryManagerGUI
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 176);
+            this.label4.Location = new System.Drawing.Point(31, 69);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 28);
             this.label4.TabIndex = 11;
@@ -128,7 +128,7 @@ namespace InventoryManagerGUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 58);
+            this.label1.Location = new System.Drawing.Point(31, 128);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 28);
@@ -138,7 +138,7 @@ namespace InventoryManagerGUI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 116);
+            this.label2.Location = new System.Drawing.Point(31, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 28);
             this.label2.TabIndex = 2;
@@ -156,7 +156,7 @@ namespace InventoryManagerGUI
             // txtPrice
             // 
             this.txtPrice.Enabled = false;
-            this.txtPrice.Location = new System.Drawing.Point(186, 55);
+            this.txtPrice.Location = new System.Drawing.Point(186, 125);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(125, 34);
             this.txtPrice.TabIndex = 6;
@@ -164,7 +164,7 @@ namespace InventoryManagerGUI
             // txtDiscount
             // 
             this.txtDiscount.Enabled = false;
-            this.txtDiscount.Location = new System.Drawing.Point(186, 113);
+            this.txtDiscount.Location = new System.Drawing.Point(186, 183);
             this.txtDiscount.MaxLength = 50;
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Size = new System.Drawing.Size(125, 34);

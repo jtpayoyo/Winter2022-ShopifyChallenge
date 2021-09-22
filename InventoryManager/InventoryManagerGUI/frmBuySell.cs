@@ -71,32 +71,30 @@ namespace InventoryManagerGUI
             txtItemId.Text = myItem.ItemId.ToString();
             txtItemName.Text = myItem.ItemName;
             pbImage.Image = ItemManager.GetImageByItem(myItem);
-
-            if (isBuy)
-            {
-                txtPrice.Text = myItem.FactoryPrice.ToString("c");
-                txtDiscount.Text = myItem.FactoryDiscount.ToString("c");
-            }
-            else
-            {
-                txtPrice.Text = myItem.ItemPrice.ToString("c");
-                txtDiscount.Text = myItem.ItemDiscount.ToString("c");
-            }
-            
             calculateTotal();
         }
 
-        // Updates txtTotal
+        // Updates txtPrice, txtDiscount, txtTotal
         private void calculateTotal()
         {
+            decimal discount;
+            decimal price;
+
             if (isBuy)
             {
+                price = myItem.FactoryPrice * nupQuantity.Value;
+                discount = myItem.FactoryPrice * myItem.FactoryDiscount * nupQuantity.Value;
                 myTotal = myItem.FactoryPrice * (1 - myItem.FactoryDiscount) * nupQuantity.Value;
             }
             else
             {
+                price = myItem.ItemPrice * nupQuantity.Value;
+                discount = myItem.ItemPrice * myItem.ItemDiscount * nupQuantity.Value;
                 myTotal = myItem.ItemPrice * (1 - myItem.ItemDiscount) * nupQuantity.Value;
             }
+
+            txtPrice.Text = price.ToString("c");
+            txtDiscount.Text = discount.ToString("c");
             txtTotal.Text = myTotal.ToString("c");
         }
 
