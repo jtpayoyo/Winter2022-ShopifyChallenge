@@ -70,6 +70,7 @@ namespace InventoryManagerGUI
         {
             txtItemId.Text = myItem.ItemId.ToString();
             txtItemName.Text = myItem.ItemName;
+            pbImage.Image = ItemManager.GetImageByItem(myItem);
 
             if (isBuy)
             {

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -57,6 +59,36 @@ namespace InventoryManagerData
             myItem.ItemQuantity = newQuantity;
             db.SaveChanges();
         }
+
+        /*// Obtains image given item id
+        // Obtained from stack overflow
+        // https://stackoverflow.com/questions/9576868/how-to-put-image-in-a-picture-box-from-a-byte-in-c-sharp
+        public static Bitmap GetImageByItemId(int myId)
+        {
+            MyImageDBContext db = new MyImageDBContext();
+            Item myItem = db.Items.SingleOrDefault(t => t.ItemId == myId);
+
+            MemoryStream mStream = new MemoryStream();
+            byte[] pData = myItem.Image.ImageFile;
+            mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
+            Bitmap bm = new Bitmap(mStream, false);
+            mStream.Dispose();
+            return bm;
+        }*/
+
+        // Obtains image given item id
+        // Obtained from stack overflow
+        // https://stackoverflow.com/questions/9576868/how-to-put-image-in-a-picture-box-from-a-byte-in-c-sharp
+        public static Bitmap GetImageByItem(Item myItem)
+        {
+            MemoryStream mStream = new MemoryStream();
+            byte[] pData = myItem.Image.ImageFile;
+            mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
+            Bitmap bm = new Bitmap(mStream, false);
+            mStream.Dispose();
+            return bm;
+        }
+
 
     } // End of class
 } // End of namespace

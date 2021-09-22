@@ -32,6 +32,7 @@ namespace InventoryManagerGUI
         private void frmDetail_Load(object sender, EventArgs e)
         {
             myItem = ItemManager.GetItemById(itemId);
+            pbImage.Image = ItemManager.GetImageByItem(myItem);
             txtItemId.Text = myItem.ItemId.ToString();
             txtItemName.Text = myItem.ItemName;
             txtItemDescription.Text = myItem.ItemDescription;

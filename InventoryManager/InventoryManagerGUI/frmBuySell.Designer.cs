@@ -29,7 +29,7 @@ namespace InventoryManagerGUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbImage = new System.Windows.Forms.PictureBox();
             this.gbBuySell = new System.Windows.Forms.GroupBox();
             this.nupQuantity = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,19 +45,20 @@ namespace InventoryManagerGUI
             this.label6 = new System.Windows.Forms.Label();
             this.txtItemId = new System.Windows.Forms.TextBox();
             this.txtItemName = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.gbBuySell.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupQuantity)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pbImage
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(37, 36);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(325, 325);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pbImage.Location = new System.Drawing.Point(37, 36);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(4);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(325, 325);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImage.TabIndex = 1;
+            this.pbImage.TabStop = false;
             // 
             // gbBuySell
             // 
@@ -215,13 +216,14 @@ namespace InventoryManagerGUI
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.gbBuySell);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbImage);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBuySell";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBuySell";
             this.Load += new System.EventHandler(this.frmBuySell_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.gbBuySell.ResumeLayout(false);
             this.gbBuySell.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupQuantity)).EndInit();
@@ -232,7 +234,7 @@ namespace InventoryManagerGUI
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbImage;
         private System.Windows.Forms.GroupBox gbBuySell;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label1;
