@@ -48,5 +48,15 @@ namespace InventoryManagerData
             db.SaveChanges();
         }
 
+        // Buys/sells items and saves changes
+        public static void BuySellItem(int myId, int newQuantity)
+        {
+            // Get item from database
+            MyImageDBContext db = new MyImageDBContext();
+            Item myItem = db.Items.SingleOrDefault(t => t.ItemId == myId);
+            myItem.ItemQuantity = newQuantity;
+            db.SaveChanges();
+        }
+
     } // End of class
 } // End of namespace

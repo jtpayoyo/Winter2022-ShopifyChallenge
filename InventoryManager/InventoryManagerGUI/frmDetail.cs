@@ -60,11 +60,11 @@ namespace InventoryManagerGUI
                Validator.IsPresent(txtFactoryPrice) &&
                Validator.IsNonNegativeDecimal(txtFactoryPrice) &&
                Validator.IsPresent(txtFactoryDiscount) &&
-               Validator.IsNonNegativeDecimal(txtFactoryDiscount) &&
+               Validator.IsDecimalWithinRangeInclusive(txtFactoryDiscount, 0, 1) &&
                Validator.IsPresent(txtItemPrice) &&
                Validator.IsNonNegativeDecimal(txtItemPrice) &&
                Validator.IsPresent(txtItemDiscount) &&
-               Validator.IsNonNegativeDecimal(txtItemDiscount))
+               Validator.IsDecimalWithinRangeInclusive(txtItemDiscount, 0, 1))
             {
                 // Try updating data
                 try

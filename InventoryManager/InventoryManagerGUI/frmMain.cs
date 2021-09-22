@@ -108,24 +108,31 @@ namespace InventoryManagerGUI
                 && e.RowIndex != -1)
             {
                 int itemId = (int)dgvItems.Rows[e.RowIndex].Cells[0].Value;
+                Item myItem = ItemManager.GetItemById(itemId);
 
-                // Calls modify operation
+                // Calls edit operation
                 if (e.ColumnIndex == EDIT_INDEX)
                 {
                     EditItem(itemId);
                 }
-                // Calls delete operation
+                // Calls buy operation
                 else if (e.ColumnIndex == BUY_INDEX)
                 {
                     BuyItem(itemId);
                 }
+                // Calls sell operation
                 else if (e.ColumnIndex == SELL_INDEX)
                 {
-                    SellItem(itemId);
+                    // Checks if there is stock
+                    if (myItem.ItemQuantity != 0)
+                        SellItem(itemId);
+                    else
+                    {
+                        string message = $"{myItem.ItemName} is out of stock! You must buy more items first.";
+                        MessageBox.Show(message, "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }                        
                 }
             }
-
-
         } // End of CellClick
 
         // Opens frmDetail
@@ -140,7 +147,7 @@ namespace InventoryManagerGUI
             // Checks if edit succeeded
             if (result == DialogResult.OK)
             {
-
+                DisplayItems();
             }
 
         } // End of EditItem
@@ -158,7 +165,7 @@ namespace InventoryManagerGUI
             // Checks if buy succeeded
             if (result == DialogResult.OK)
             {
-
+                DisplayItems();
             }
         }
 
@@ -175,7 +182,7 @@ namespace InventoryManagerGUI
             // Checks if buy succeeded
             if (result == DialogResult.OK)
             {
-
+                DisplayItems();
             }
         }    
 

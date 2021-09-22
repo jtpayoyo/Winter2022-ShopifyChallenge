@@ -37,6 +37,24 @@ namespace InventoryManagerGUI
         }
 
         /// <summary>
+        /// checks if text box is not empty
+        /// </summary>
+        /// <param name="nupInput">text box to validate 
+        /// (must have Tag set to meaningful name for error message)</param>
+        /// <returns>true is present and false if not</returns>
+        public static bool IsPresentNUP(NumericUpDown nupInput)
+        {
+            bool isValid = true; // "innocent until proven guilty"
+            if (nupInput.Text == "")
+            {
+                MessageBox.Show(nupInput.Tag + " must be provided", "Input Error");
+                nupInput.Focus(); // put focus on the text box to guide the user
+                isValid = false;
+            }
+            return isValid;
+        }
+
+        /// <summary>
         /// checks if text box contains non-negative int number
         /// </summary>
         /// <param name="txtInput">text box to validate 
@@ -162,6 +180,57 @@ namespace InventoryManagerGUI
 
             return isValid;
         }
+
+        public static bool IsDecimalWithinRangeInclusive(TextBox txtInput, int min, int max)
+        {
+            bool isValid = true;
+            decimal value;
+
+            if (!Decimal.TryParse(txtInput.Text, out value)) // if not a decimal
+            {
+                MessageBox.Show(txtInput.Tag + " should be a number", "Input Error");
+                txtInput.SelectAll();
+                txtInput.Focus();
+                isValid = false;
+            }
+            // is a decimal but out of range
+            else if (value < min || value > max)
+            {
+                MessageBox.Show(txtInput.Tag + $" should be greater than or equal to {min} or less than or equal to {max}.","Input Error");
+                txtInput.SelectAll();
+                txtInput.Focus();
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+
+        public static bool IsIntWithinRangeInclusiveNUP(NumericUpDown nupInput, int min, int max)
+        {
+            bool isValid = true;
+            int value;
+
+            if (!Int32.TryParse(nupInput.Text, out value)) // if not an int
+            {
+                MessageBox.Show(nupInput.Tag + " should be a whole number", "Input Error");
+                nupInput.Focus();
+                isValid = false;
+            }
+            // is an int but out of range
+            else 
+            {
+                if (value < min || value > max)
+                {
+                    MessageBox.Show(nupInput.Tag + $" should be greater than or equal to {min} or less than or equal to {max}.", "Input Error");
+                    nupInput.Focus();
+                    isValid = false;
+                }
+            }
+
+            return isValid;
+        }
+
+
 
     } // End of class
 } // End of namespace
