@@ -84,6 +84,7 @@ namespace InventoryManagerGUI
             this.nupQuantity.Name = "nupQuantity";
             this.nupQuantity.Size = new System.Drawing.Size(125, 34);
             this.nupQuantity.TabIndex = 12;
+            this.nupQuantity.Tag = "Quantity";
             this.nupQuantity.ValueChanged += new System.EventHandler(this.nupQuantity_ValueChanged);
             // 
             // label4

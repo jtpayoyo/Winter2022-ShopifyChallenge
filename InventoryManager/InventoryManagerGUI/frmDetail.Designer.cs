@@ -110,6 +110,7 @@ namespace InventoryManagerGUI
             this.txtItemId.Name = "txtItemId";
             this.txtItemId.Size = new System.Drawing.Size(125, 34);
             this.txtItemId.TabIndex = 6;
+            this.txtItemId.Tag = "Item ID";
             // 
             // txtItemName
             // 
@@ -118,6 +119,7 @@ namespace InventoryManagerGUI
             this.txtItemName.Name = "txtItemName";
             this.txtItemName.Size = new System.Drawing.Size(272, 34);
             this.txtItemName.TabIndex = 7;
+            this.txtItemName.Tag = "Name";
             // 
             // txtItemDescription
             // 
@@ -126,6 +128,7 @@ namespace InventoryManagerGUI
             this.txtItemDescription.Name = "txtItemDescription";
             this.txtItemDescription.Size = new System.Drawing.Size(272, 34);
             this.txtItemDescription.TabIndex = 8;
+            this.txtItemDescription.Tag = "Description";
             // 
             // txtItemQuantity
             // 
@@ -134,6 +137,7 @@ namespace InventoryManagerGUI
             this.txtItemQuantity.Name = "txtItemQuantity";
             this.txtItemQuantity.Size = new System.Drawing.Size(125, 34);
             this.txtItemQuantity.TabIndex = 9;
+            this.txtItemQuantity.Tag = "Quantity";
             // 
             // label5
             // 
@@ -159,6 +163,7 @@ namespace InventoryManagerGUI
             this.txtFactoryPrice.Name = "txtFactoryPrice";
             this.txtFactoryPrice.Size = new System.Drawing.Size(125, 34);
             this.txtFactoryPrice.TabIndex = 4;
+            this.txtFactoryPrice.Tag = "Factory Price";
             // 
             // txtFactoryDiscount
             // 
@@ -166,6 +171,7 @@ namespace InventoryManagerGUI
             this.txtFactoryDiscount.Name = "txtFactoryDiscount";
             this.txtFactoryDiscount.Size = new System.Drawing.Size(125, 34);
             this.txtFactoryDiscount.TabIndex = 5;
+            this.txtFactoryDiscount.Tag = "Factory Discount";
             // 
             // groupBox1
             // 
@@ -199,6 +205,7 @@ namespace InventoryManagerGUI
             this.txtItemPrice.Name = "txtItemPrice";
             this.txtItemPrice.Size = new System.Drawing.Size(125, 34);
             this.txtItemPrice.TabIndex = 4;
+            this.txtItemPrice.Tag = "Store Price";
             // 
             // label7
             // 
@@ -224,6 +231,7 @@ namespace InventoryManagerGUI
             this.txtItemDiscount.Name = "txtItemDiscount";
             this.txtItemDiscount.Size = new System.Drawing.Size(125, 34);
             this.txtItemDiscount.TabIndex = 5;
+            this.txtItemDiscount.Tag = "Store Discount";
             // 
             // btnCancel
             // 

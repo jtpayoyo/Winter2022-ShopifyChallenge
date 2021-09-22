@@ -1,4 +1,5 @@
 ﻿using InventoryManagerData;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -51,8 +52,41 @@ namespace InventoryManagerGUI
         // Validates data and saves changes to the database
         private void btnSave_Click(object sender, EventArgs e)
         {
+            // Validate text fields
+            if(Validator.IsPresent(txtItemName) &&
+               Validator.IsPresent(txtItemDescription) &&
+               Validator.IsPresent(txtItemQuantity) &&
+               Validator.IsNonNegativeInt(txtItemQuantity) &&
+               Validator.IsPresent(txtFactoryPrice) &&
+               Validator.IsNonNegativeDecimal(txtFactoryPrice) &&
+               Validator.IsPresent(txtFactoryDiscount) &&
+               Validator.IsNonNegativeDecimal(txtFactoryDiscount) &&
+               Validator.IsPresent(txtItemPrice) &&
+               Validator.IsNonNegativeDecimal(txtItemPrice) &&
+               Validator.IsPresent(txtItemDiscount) &&
+               Validator.IsNonNegativeDecimal(txtItemDiscount))
+            {
+                // Try updating data
+                try
+                {
+                    ItemManager.UpdateItem(itemId, txtItemName.Text, txtItemDescription.Text, Convert.ToInt32(txtItemQuantity.Text),
+                        Convert.ToDecimal(txtFactoryPrice.Text), Convert.ToDecimal(txtFactoryDiscount.Text),
+                        Convert.ToDecimal(txtItemPrice.Text), Convert.ToDecimal(txtItemDiscount.Text), myItem.ImageId);
+                }
+                // Catches errors and displays them
+                catch (DbUpdateException ex)
+                {
+                    HandleException.DisplayDbError(ex);
+                }
+                catch (Exception ex)
+                {
+                    HandleException.DisplayGeneralError(ex);
+                }
 
-        }
+                // Send user back to frmMain
+                this.DialogResult = DialogResult.OK;
+            }
+        } // End of btnSave_Click
 
     } // End of class
 } // End of namespace
